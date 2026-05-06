@@ -56,11 +56,8 @@ nav {
 
 nav a {
   color: #cfc8dc;
-
   text-decoration: none;
-
   font-size: 14px;
-
   transition: .2s;
 }
 
@@ -70,7 +67,6 @@ nav a:hover {
 
 .hero {
   width: min(1200px, 92%);
-
   min-height: calc(100vh - 120px);
 
   margin: 0 auto;
@@ -85,21 +81,15 @@ nav a:hover {
 
 h1 {
   font-size: clamp(58px, 7vw, 96px);
-
   line-height: .95;
-
   letter-spacing: -4px;
-
   margin-bottom: 24px;
 }
 
 .content p {
   max-width: 580px;
-
   color: #bdb7c8;
-
   font-size: 19px;
-
   line-height: 1.7;
 }
 
@@ -107,44 +97,48 @@ h1 {
   margin-top: 38px;
 
   display: flex;
-
   gap: 16px;
-
   flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block;
-
-  padding: 16px 24px;
-
+  padding: 16px 28px;
   border-radius: 16px;
-
   text-decoration: none;
-
   font-weight: bold;
-
-  transition: .25s;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
-.primary {
+.btn.primary {
+  background: linear-gradient(135deg,#fff,#dccaff);
   color: #111;
 
-  background: linear-gradient(135deg,#fff,#dccaff);
-
-  box-shadow: 0 0 35px rgba(150,60,255,.25);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
 }
 
-.secondary {
+.btn.primary:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 0 45px rgba(168, 85, 247, 0.65);
+}
+
+.btn.secondary {
   color: white;
 
-  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,0.03);
 
-  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.18);
 }
 
-.btn:hover {
+.btn.secondary:hover {
   transform: translateY(-4px);
+
+  border-color: #a855f7;
+
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.45);
 }
 
 .visual {
